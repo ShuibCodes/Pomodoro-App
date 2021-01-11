@@ -7,6 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -15,6 +17,9 @@ code {
 /* .active{
   opacity: 0;
 } */
+.tasklist-container{
+  background-color: #282c34;
+}
 
 
 .app {
@@ -63,7 +68,4 @@ code {
   background-color: #3151ff;
   border: 1px solid #152684;
   color: white;
-}
-.button{
-  background-color: red;
 }
