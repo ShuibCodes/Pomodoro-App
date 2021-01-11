@@ -12,8 +12,8 @@ const Timer = () => {
           if (seconds > 1 && isActive) {
               setSeconds(seconds - 1);
           }
-          if (seconds === 0) {
-              if (minutes === 0) {
+          if (seconds === 0 && isActive) {
+              if (minutes === 0 && isActive) {
                   clearInterval(myInterval)
               } else {
                   setMinutes(minutes - 1);
@@ -36,16 +36,20 @@ const Timer = () => {
       setMinutes(25)
       setIsActive(false)
   }
+
+  
+
   return (
     <div>
     { minutes === 0 && seconds === 0
         ? <h1>{minutes}: {seconds}{seconds}</h1> 
         : <h1> {minutes}:{seconds < 10 ?  `0${seconds}` : seconds}</h1> 
     }
-    <button onClick={toggle} className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle}>
+    <button onClick={toggle} className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}>
           {isActive ? 'Pause' : 'Start'}
     </button>
     <button className='button' onClick={reset} >Reset</button>
+    
     </div>
     
 
