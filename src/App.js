@@ -1,7 +1,12 @@
+
+import React from 'react'
 import './App.css';
 import Timer from './Components/Timerr'
-import TaskList from './Components/TaskList';
+import MainTodo from './Components/TaskList/MainTodo'
+
 function App() {
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -10,10 +15,7 @@ function App() {
         <h3>Get Some Work Done!</h3>
         <Timer/>
         </div>
-        <div className="tasklist-container">
-        <h2>Task-List</h2>
-        <TaskList/>
-      </div>
+        <MainTodo />
       </header>
      
     </div>
