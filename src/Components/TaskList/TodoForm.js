@@ -11,19 +11,19 @@ const TodoForm = ({addTodo}) => {
     });
     
         // function that will update object props onChange, so the task in this case.
-        // will put in the todo properties with spread operator (only id and completed), then set the task prop to new value
+        // will put in the todo properties with spread operator (only id and completed), then set the task prop to new value which user inputs
         function handleChange(e){
             setTodo({...todo, task: e.target.value})
         }
 
-        // when user submits, we need to add form todo from statte to list of todos
+        // when user submits, we need to add form todo from state to list of todos
 
         function handleSubmit(e){
             // prevent default 
             e.preventDefault();
-            // if there the form is NOT empty (no white space)
+            // if the form is NOT empty (no white space)
             if(todo.task.trim()){
-                addTodo({...todo});
+                addTodo({...todo, id: Math.random()});
                 // reset form by updating state with empty task prop:
                 setTodo({...todo, task: ""});
 

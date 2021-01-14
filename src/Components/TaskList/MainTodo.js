@@ -11,13 +11,34 @@ const MainTodo = () => {
             setTodos([todo, ...todos]);
     }
 
+
+    function toggleComplete(id){
+        // use setTodos to change state if id is matching then change completed to true
+        setTodos(
+            // mapping thru each todo, then adding function to them
+            todos.map(todo =>{
+                if (todo.id === id){
+                    return{
+                        ...todo,
+                        completed: !todo.completed //(will activate line thru class)
+                    };
+                }
+
+                return todo;
+            })
+        )
+    }
+
+        function deleteTodo(id){
+                setTodos(todos.filter(todo => todo.id !== id ));
+        }
     return (
         <div>
-            <header className="App-header">
+         
                 <h2>Task-List</h2>
-            </header>
+          
             <TodoForm addTodo={addTodo}/>
-            <List todos={todos} />
+            <List todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
         </div>
     );
 }
