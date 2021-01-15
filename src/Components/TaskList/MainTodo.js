@@ -6,9 +6,9 @@ import List from './List'
 const MainTodo = () => {
     const [todos,setTodos] = useState([]);
 
-    function addTodo(todo){
+    function addTodo(task){
             // make a new aray called todo , adding it to start, and then spread the old array (todos) onto it
-            setTodos([todo, ...todos]);
+            setTodos([task, ...todos]);
     }
 
 

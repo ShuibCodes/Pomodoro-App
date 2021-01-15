@@ -23,6 +23,7 @@ const TodoForm = ({addTodo}) => {
             e.preventDefault();
             // if the form is NOT empty (no white space)
             if(todo.task.trim()){
+                // addTodo func adds an array, this function asigns it ar
                 addTodo({...todo, id: Math.random()});
                 // reset form by updating state with empty task prop:
                 setTodo({...todo, task: ""});
@@ -36,7 +37,7 @@ const TodoForm = ({addTodo}) => {
             <input onChange={handleChange} 
                 value={todo.task}
                 type="text"
-                placeholder="Add Todo"            />
+                placeholder="Add Task"            />
             <button />
         </form>
     );
