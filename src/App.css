@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: -5rem;
 
 }
 /* body,
@@ -70,14 +71,6 @@ li {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 .Pomo-container{
@@ -91,8 +84,8 @@ li {
       list-style: none;
       display: grid;
       position: absolute;
-      left: 14rem;
-      top: -1rem;
+      left: 16rem;
+      bottom: -4rem;
       
 }
 
@@ -111,4 +104,33 @@ li {
     white-space: nowrap;
     
 }
+
+.hidden{
+  color: green;
+}
+
+
+#todos{
+    margin-left: 3rem;
+    width: 70px;
+    white-space: nowrap;
+
+}
+
+.MuiIconButton-label{
+  margin-top: -11px;
+
+}
+.form-container{
+
+
+  padding-top: 2rem;
+}
+
+
+.break{
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 

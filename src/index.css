@@ -54,13 +54,13 @@ code {
 }
 
 .button-primary:hover {
-  background-color: #2641d4;
+  background-color: rgb(12, 201, 59);
   border: 1px solid #1b1f2b;
 }
 
 .button-primary-active {
-  background-color: #3151ff;
-  border: 1px solid #152684;
+  background-color: rgb(12, 201, 59);
+  border: 1px solid rgb(12, 201, 59);
   color: white;
 }
 
@@ -70,9 +70,37 @@ code {
   color: white;
 }
 
-.hidden{
-  opacity: 0%;
+.rbutton-primary:hover {
+  background-color: rgb(12, 201, 59);
+  border: 1px solid #1b1f2b;
+}
+
+.rbutton-primary-active {
+  background-color: rgb(184, 17, 17);
+  border: 1px solid rgb(184, 17, 17);
+  color: white;
+}
+
+.rbutton-primary-inactive {
+  background-color: #3151ff;
+  border: 1px solid #152684;
+  color: white;
+}
+
+.greentext{
+  color: rgb(12, 201, 59);
+}
+
+.greenb{
+  background-color:rgb(12, 201, 59); 
+}
+.green{
+  color: rgb(12, 201, 59);
+
+
 }
 .countdown{
-  font-size: 20rem;
+  font-size: 35px;
+  color: black;
 }
+

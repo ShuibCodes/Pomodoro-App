@@ -10,11 +10,11 @@ function App() {
 
   return (
     <div className="App">
-    
+   
       <Typography 
         variant="h5"
         style={{padding: 3}}>
-          Pomodoro Timer
+       
         </Typography>
         <div className="countdown-container">
         <Timer/>

@@ -2,15 +2,15 @@ import React, {useState} from 'react';
 // import "../App.css"
 import TodoForm from '../TaskList/TodoForm'
 import TaskList from './List';
-import Timer from '../Timerr';
 
-const MainTodo = ({reset}) => {
+
+const MainTodo = ({reset, toggle}) => {
     const [todos,setTodos] = useState([]);
 
     function addTodo(task){
             // make a new aray called todo , adding it to start, and then spread the old array (todos) onto it
             setTodos([task, ...todos]);
-
+            toggle()
             
 
     }
@@ -46,9 +46,9 @@ const MainTodo = ({reset}) => {
     return (
         <div>
          
-                <h4 className="Title" >Task-List</h4>
-          
-            <TodoForm addTodo={addTodo} />
+                {/* <h4 className="Title" >Task-List</h4> */}
+            <div className="form-container"> <TodoForm addTodo={addTodo} /></div>
+           
             <TaskList todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
            
         </div>
