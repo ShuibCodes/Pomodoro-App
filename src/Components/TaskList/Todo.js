@@ -1,5 +1,6 @@
  import React from 'react';
- 
+ import {Checkbox,IconButton, Typography} from '@material-ui/core';
+// import {CloseIcon} from "@material-ui/icons/Close"
  const Todo = ({todo, toggleComplete,deleteTodo}) => {
     function handleCheckBox(){
         toggleComplete(todo.id);
@@ -12,14 +13,15 @@
 
      return (
         <div style={{display: "flex"}} >
-        <input onClick={handleCheckBox} type="checkbox" />
-         <li
+        <Checkbox checked={todo.completed}  onClick={handleCheckBox} type="checkbox" />
+         <Typography variant="body1"
+            
             style={{
-                color: "white",
+                color: "black",
                 textDecoration: todo.completed ? "line-through" : null
             }}
-         >{todo.task}</li>
-         <button onClick={handleDelete} >x</button>
+         >{todo.task}</Typography>
+         <IconButton onClick={handleDelete}> x  </IconButton>
         </div>
       
          

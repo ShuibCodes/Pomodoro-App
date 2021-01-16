@@ -1,7 +1,49 @@
 .App {
   text-align: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+/* body,
+html,
+#root{
+  height: 100%;
+} */
+
+.todo-form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -1rem;
+  margin-left: 3rem;
+}
+.Title{
+  align-items: center;
+}
+li {
+  text-align: center;
+  
+}
+.MuiButton-label{
+  font-size: 15px;
+  margin-bottom: -1.2rem;
+
 }
 
+.MuiButton-label:hover{
+   text-decoration: none;
+   background-color: lightgray;
+}
+
+.button{
+  width: 70px;
+  padding: 4px 8px 4px 8px;
+  font-size: 10px;
+  margin-top: -80px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +78,37 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Pomo-container{
+    font-size: 20px;
+    position: relative;
+
+}
+
+
+.group{
+      list-style: none;
+      display: grid;
+      position: absolute;
+      left: 14rem;
+      top: -1rem;
+      
+}
+
+.times{
+      padding-top: 5px ;
+       padding-bottom: 20px ;
+      width: 40px;
+      height: 30px;
+
+      
+}
+
+.mins{
+    padding: 6px 10px 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    
+}
+

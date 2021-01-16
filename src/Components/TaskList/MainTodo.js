@@ -1,14 +1,18 @@
 import React, {useState} from 'react';
 // import "../App.css"
 import TodoForm from '../TaskList/TodoForm'
-import List from './List'
+import TaskList from './List';
+import Timer from '../Timerr';
 
-const MainTodo = () => {
+const MainTodo = ({reset}) => {
     const [todos,setTodos] = useState([]);
 
     function addTodo(task){
             // make a new aray called todo , adding it to start, and then spread the old array (todos) onto it
             setTodos([task, ...todos]);
+
+            
+
     }
 
 
@@ -29,16 +33,24 @@ const MainTodo = () => {
         )
     }
 
+    
+ 
+
         function deleteTodo(id){
                 setTodos(todos.filter(todo => todo.id !== id ));
+                reset();
         }
+
+
+
     return (
         <div>
          
-                <h2>Task-List</h2>
+                <h4 className="Title" >Task-List</h4>
           
-            <TodoForm addTodo={addTodo}/>
-            <List todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
+            <TodoForm addTodo={addTodo} />
+            <TaskList todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
+           
         </div>
     );
 }

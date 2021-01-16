@@ -1,5 +1,7 @@
 // keep track of our state
 import React,{useState} from 'react';
+import {Button, TextField} from '@material-ui/core'
+
 // import {v4 as uuid} from 'uuid';
 // destructing addTodo function from props paramter. props can only be passed down from parent to child
 const TodoForm = ({addTodo}) => {
@@ -10,10 +12,12 @@ const TodoForm = ({addTodo}) => {
         completed: false,
     });
     
+    
         // function that will update object props onChange, so the task in this case.
         // will put in the todo properties with spread operator (only id and completed), then set the task prop to new value which user inputs
         function handleChange(e){
-            setTodo({...todo, task: e.target.value})
+            setTodo({...todo, task: e.target.value});
+
         }
 
         // when user submits, we need to add form todo from state to list of todos
@@ -27,18 +31,21 @@ const TodoForm = ({addTodo}) => {
                 addTodo({...todo, id: Math.random()});
                 // reset form by updating state with empty task prop:
                 setTodo({...todo, task: ""});
+                window.scroll(0, 1000);
 
             }
         }
 
 
     return (
-        <form onSubmit={handleSubmit} >
-            <input onChange={handleChange} 
+        <form className="todo-form" onSubmit={handleSubmit}>
+            <TextField onChange={handleChange} 
+                className="AddTodo"
+                label="Task"
                 value={todo.task}
                 type="text"
                 placeholder="Add Task"            />
-            <button />
+        <Button className="add"  type="submit"> Add </Button>
         </form>
     );
 }

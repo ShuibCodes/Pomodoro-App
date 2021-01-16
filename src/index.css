@@ -69,3 +69,10 @@ code {
   border: 1px solid #152684;
   color: white;
 }
+
+.hidden{
+  opacity: 0%;
+}
+.countdown{
+  font-size: 20rem;
+}
