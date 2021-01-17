@@ -104,3 +104,7 @@ code {
   color: black;
 }
 
+
+.hidden{
+  opacity: 0%;
+}

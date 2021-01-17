@@ -10,7 +10,8 @@ const Timer = () => {
   const [ minutes, setMinutes ] = useState(initialMinute);
   const [seconds, setSeconds ] =  useState(initialSeconds);
   const [isActive, setIsActive] = useState(false)
-  const [isGreen, setIsGreen] = useState(false)
+
+
   useEffect(()=>{
   let myInterval = setInterval(() => {
           if (seconds > 0 && isActive) {
@@ -33,7 +34,7 @@ const Timer = () => {
   
   function toggle(){
     setIsActive(!isActive);
-    setIsGreen(!isGreen);
+   
   }
 
   function reset(){
@@ -63,6 +64,7 @@ function to30(){
 }
 
 
+
  
 
   return (
@@ -79,7 +81,7 @@ function to30(){
           {isActive ? 'Pause' : 'Start'} 
     </button>
     <button className={`button rbutton-primary rbutton-primary-${isActive ? 'active' : 'inactive'}`}  onClick={reset} >Reset</button>
-
+ 
     <NewTime  to45={to45} to30={to30}  timeChange={timeChange} />
   
     </div>
