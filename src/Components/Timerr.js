@@ -70,7 +70,7 @@ function to30(){
     <h2 className={isActive ? 'greentext' : null} >{isActive && minutes !== 0 ? 'Get Some Work Done' : 'Pomodoro App'}</h2>
     <div className="Pomo-container" >
     { minutes === 0 && seconds === 0
-        ? <h4 className="break" >Take a Break! you've earned it</h4>
+        ? <h4 className="break" >Take a 5 min Break! you've earned it</h4>
         : <h1 className={isActive ? 'green' : 'countdown'}> {minutes}:{seconds < 10 ?  `0${seconds}` : seconds}</h1> 
     }
 
