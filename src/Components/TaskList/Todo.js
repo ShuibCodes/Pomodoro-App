@@ -14,7 +14,7 @@
 
 
      return (
-        <div style={{display: "flex"}} >
+        <div className="AddTodo">
         <Checkbox id="check" checked={todo.completed}  onClick={handleCheckBox} type="checkbox" />
          <Typography variant="body1"
             

@@ -37,15 +37,18 @@ const TodoForm = ({addTodo}) => {
         }
 
 
+
+
+
+
     return (
         <form className="todo-form" onSubmit={handleSubmit}>
-            <TextField onChange={handleChange} 
+            <input onChange={handleChange} 
                 className="AddTodo"
                 label="Task"
                 value={todo.task}
                 type="text"
                 placeholder="Add Task"            />
-        <Button className="add"  type="submit"> Add </Button>
         </form>
     );
 }

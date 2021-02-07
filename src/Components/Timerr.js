@@ -68,7 +68,7 @@ function to30(){
  
 
   return (
-    <div>
+    <div className="main"  style={{width:"60rem", height: "700px"}} >
     <h2 className={isActive ? 'greentext' : null} >{isActive && minutes !== 0 ? 'Get Some Work Done' : 'Pomodoro App'}</h2>
     <div className="Pomo-container" >
     { minutes === 0 && seconds === 0
@@ -77,12 +77,12 @@ function to30(){
     }
 
 
-    <button onClick={toggle}  className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}>
+    <button style={{width: "200px", height: "100px", fontSize: "50px"}} onClick={toggle}  className={`  maintwo button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}>
           {isActive ? 'Pause' : 'Start'} 
     </button>
-    <button className={`button rbutton-primary rbutton-primary-${isActive ? 'active' : 'inactive'}`}  onClick={reset} >Reset</button>
+    <button style={{width: "200px", height: "100px", fontSize: "50px"}} className={`button rbutton-primary rbutton-primary-${isActive ? 'active' : 'inactive'}`}  onClick={reset} >Reset</button>
  
-    <NewTime  to45={to45} to30={to30}  timeChange={timeChange} />
+    {/* <NewTime  to45={to45} to30={to30}  timeChange={timeChange} /> */}
   
     </div>
     <MainTodo toggle={toggle} reset={reset} />

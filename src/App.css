@@ -7,12 +7,46 @@
   justify-content: center;
   margin-left: -5rem;
 
+
 }
+
+
 /* body,
 html,
 #root{
   height: 100%;
 } */
+
+.countdown-container{
+  border: 1px solid black;
+  
+}
+
+input{
+  height: 30px;
+  border: solid black 3px;
+  font-size: 20px;
+}
+.main{
+  display: grid;
+align-content: center;
+position: relative;
+bottom: 10rem
+}
+
+.AddTodo{
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  position: absolute;
+  left: 10rem;
+  
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .todo-form{
   display: flex;
@@ -20,6 +54,7 @@ html,
   align-items: center;
   margin-top: -1rem;
   margin-left: 3rem;
+  
 }
 .Title{
   align-items: center;
@@ -39,6 +74,10 @@ li {
    background-color: lightgray;
 }
 
+
+.add{
+  font-size: 30px;
+}
 .button{
   width: 70px;
   padding: 4px 8px 4px 8px;

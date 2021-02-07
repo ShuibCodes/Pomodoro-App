@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
 
@@ -40,18 +41,22 @@ code {
 }
 
 .button {
-  padding: .6rem 1.5rem;
-  margin: .4rem;
+  padding: 6rem 1.5rem;
+  margin: 2rem;
   border-radius: 3px;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: .8rem;
+  font-weight: 700;
+  font-size: 8rem;
   border-style: groove;
+  position: relative;
+  bottom: 4rem;
+
 }
 
 .button:focus {
   outline-width: 0;
 }
+
 
 .button-primary:hover {
   background-color: rgb(12, 201, 59);
@@ -68,7 +73,10 @@ code {
   background-color: #3151ff;
   border: 1px solid #152684;
   color: white;
+  
 }
+
+
 
 .rbutton-primary:hover {
   background-color: rgb(12, 201, 59);
@@ -89,6 +97,8 @@ code {
 
 .greentext{
   color: rgb(12, 201, 59);
+  font-size: 60px;
+  padding: 0;
 }
 
 .greenb{
@@ -96,13 +106,15 @@ code {
 }
 .green{
   color: rgb(12, 201, 59);
-
+  font-size: 190px;
 
 }
 .countdown{
-  font-size: 35px;
+  font-size: 190px;
   color: black;
+  
 }
+
 
 
 .hidden{
