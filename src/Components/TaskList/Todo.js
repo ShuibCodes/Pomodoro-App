@@ -2,6 +2,7 @@
  import {Checkbox,IconButton, Typography} from '@material-ui/core';
  import {BsTrash} from 'react-icons/bs'
  import { IconContext } from 'react-icons/lib';
+ import DeleteIcon from '@material-ui/icons/Delete'
 // import {CloseIcon} from "@material-ui/icons/Close"
  const Todo = ({todo, toggleComplete,deleteTodo}) => {
     function handleCheckBox(){
@@ -15,15 +16,16 @@
 
      return (
         <div className="AddTodo">
-        <Checkbox id="check" checked={todo.completed}  onClick={handleCheckBox} type="checkbox" />
-         <Typography variant="body1"
+        <Checkbox style={{position:'relative', bottom:'3.2rem'}} id="check" checked={todo.completed}  onClick={handleDelete} type="checkbox" />
+         <p
             
             style={{
-                color: "black",
+                // width: '100%',
+                // color: "black",
                 textDecoration: todo.completed ? "line-through" : null
             }}
-         >{todo.task}</Typography>
-         <IconButton className="btn" onClick={handleDelete}> <IconContext.Provider value={{size:"20px"}} > <BsTrash />   </IconContext.Provider> </IconButton>
+         >{todo.task}</p>
+        
         </div>
       
          

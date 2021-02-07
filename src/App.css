@@ -40,7 +40,7 @@ bottom: 10rem
   justify-content: center;
   position: absolute;
   left: 10rem;
-  
+  font-size: 50px;
 }
 html,
 body {
@@ -50,11 +50,18 @@ body {
 
 .todo-form{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: -1rem;
-  margin-left: 3rem;
+  width: 100%;
   
+  
+  
+}
+
+input{
+  font-size: 60px !important;
+}
+
+label{
+  font-size: 30px !important;
 }
 .Title{
   align-items: center;
@@ -110,24 +117,47 @@ li {
   color: #61dafb;
 }
 
-
-
-.Pomo-container{
-    font-size: 20px;
+.containerr{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
     position: relative;
-
+    bottom: 8rem
+}
+.Pomo-container{
+  /* border: 1px black solid; */
+  /* margin: 50px; */
+  margin-left: 100px;
+  background-color: lightcoral;
+  height: 550px
 }
 
+.flex2{ 
+  position: absolute;
+  top: 10rem;
+  border: 2px groove red;
+  border-radius: 30px;
+  height:   150px;
+  padding: 150px 10px 150px 10px;
+  width: 600px;
+  background-color: lightblue;
 
-.group{
-      list-style: none;
-      display: grid;
-      position: absolute;
-      left: 16rem;
-      bottom: -4rem;
-      
 }
-
+h2{
+  font-size: 90px;
+}
+form{
+  position: relative;
+  bottom: 4rem;
+  right: 2rem;
+}
+p{
+  position: relative;
+  font-size: 40px;
+  bottom: 4rem !important
+}
+.AddTodo{
+  margin-left:60px
+}
 .times{
       padding-top: 5px ;
        padding-bottom: 20px ;
@@ -171,5 +201,6 @@ li {
   font-size: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 

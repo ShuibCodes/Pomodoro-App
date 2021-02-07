@@ -1,6 +1,8 @@
 // keep track of our state
 import React,{useState} from 'react';
 import {Button, TextField} from '@material-ui/core'
+import {makeStyles} from '@material-ui/core/styles'
+
 
 // import {v4 as uuid} from 'uuid';
 // destructing addTodo function from props paramter. props can only be passed down from parent to child
@@ -43,12 +45,15 @@ const TodoForm = ({addTodo}) => {
 
     return (
         <form className="todo-form" onSubmit={handleSubmit}>
-            <input onChange={handleChange} 
+            <TextField onChange={handleChange} 
+                variant="standard"
                 className="AddTodo"
                 label="Task"
                 value={todo.task}
                 type="text"
-                placeholder="Add Task"            />
+                placeholder="Add Task"
+                style={{fontSize:'50px'}}   
+                 />
         </form>
     );
 }

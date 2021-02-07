@@ -5,8 +5,8 @@ import NewTime from './TaskList/NewTime';
 
 
 const Timer = () => {
-  let initialMinute = 25;
-  let initialSeconds = 0;
+  let initialMinute = 0;
+  let initialSeconds = 3;
   const [ minutes, setMinutes ] = useState(initialMinute);
   const [seconds, setSeconds ] =  useState(initialSeconds);
   const [isActive, setIsActive] = useState(false)
@@ -68,8 +68,10 @@ function to30(){
  
 
   return (
-    <div className="main"  style={{width:"60rem", height: "700px"}} >
-    <h2 className={isActive ? 'greentext' : null} >{isActive && minutes !== 0 ? 'Get Some Work Done' : 'Pomodoro App'}</h2>
+    <>
+    <h2>Pomodoro App</h2>
+      <div class="containerr">
+    <h2 className={isActive ? 'greentext' : null} >{isActive && minutes !== 0 ? null : null}</h2>
     <div className="Pomo-container" >
     { minutes === 0 && seconds === 0
         ? <h4 className="break" >Take a 5 min Break! you've earned it</h4>
@@ -85,9 +87,16 @@ function to30(){
     {/* <NewTime  to45={to45} to30={to30}  timeChange={timeChange} /> */}
   
     </div>
-    <MainTodo toggle={toggle} reset={reset} />
+      <div className="flex2" >
+      <MainTodo toggle={toggle} reset={reset} />
+      </div>
+    
     </div>
     
+    </>
+    
+    
+
     
     
   )

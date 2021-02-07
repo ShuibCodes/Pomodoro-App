@@ -7,7 +7,9 @@ export default function TaskList({todos, toggleComplete, deleteTodo}) {
     
     return (
        
-         <List id="todos" >
+         <List id="todos"
+    
+          >
              {todos.map(todo =>(
                          // when using map, always have a key
             <Todo  key={todo.id} todo={todo} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
