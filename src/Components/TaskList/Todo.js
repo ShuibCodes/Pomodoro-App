@@ -26,7 +26,7 @@ import FormLabel from '@material-ui/core/FormLabel'
                 textDecoration: todo.completed ? "line-through" : null
             }}
          >{todo.task}</p>
-         <h5 className="task" >Working on: <span>{todo.task}</span> </h5>
+         
     
             </div>
 
