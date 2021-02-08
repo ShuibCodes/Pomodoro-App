@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import '../index.css'
 import MainTodo from '../Components/TaskList/MainTodo'
-import NewTime from './TaskList/NewTime';
+
 
 
 const Timer = () => {
@@ -42,26 +42,21 @@ const Timer = () => {
       setMinutes(initialMinute)
       setIsActive(false)
   }
-  function timeChange(){
-      let initialMinute = 15;
-      setMinutes(initialMinute);
-      let initialSeconds = 0;
-      setSeconds(initialSeconds)
-  }
+ 
 
-function to30(){
-      let initialMinute = 30;
-      setMinutes(initialMinute)
-      let initialSeconds = 0;
-      setSeconds(initialSeconds)
-  }
+// function to30(){
+//       let initialMinute = 30;
+//       setMinutes(initialMinute)
+//       let initialSeconds = 0;
+//       setSeconds(initialSeconds)
+//   }
   
-  function to45(){
-    let initialMinute = 45;
-    let initialSeconds = 0;
-    setMinutes(initialMinute)
-    setSeconds(initialSeconds)
-}
+//   function to45(){
+//     let initialMinute = 45;
+//     let initialSeconds = 0;
+//     setMinutes(initialMinute)
+//     setSeconds(initialSeconds)
+// }
 
     function rest(){
       let initialMinute = 5
