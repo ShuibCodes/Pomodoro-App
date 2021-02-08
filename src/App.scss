@@ -124,19 +124,38 @@ li {
     bottom: 8rem
 }
 .Pomo-container{
-  /* border: 1px black solid; */
-  /* margin: 50px; */
   margin-left: 100px;
   background-color: lightcoral;
-  height: 550px
+  height: 545px;
+  position: relative;
+  top: 5rem;
+  padding: 0px 10px 0px 10px;
+  padding-top: 0 !important;
+  border-radius: 30px;
 }
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 30px ;
+    margin-top: 20px;
+    position: relative;
+}
+h4{
+  padding-bottom: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -30px;
+  font-size: 30px;
+  position: relative;
+  font-weight: 800;
+  color: black;
 
+
+}
 .flex2{ 
   position: absolute;
-  top: 10rem;
+  top: 5.7rem;
   border: 2px groove red;
   border-radius: 30px;
-  height:   150px;
+  height:  230px;
   padding: 150px 10px 150px 10px;
   width: 600px;
   background-color: lightblue;
@@ -198,9 +217,32 @@ p{
 
 
 .break{
-  font-size: 15px;
+  font-size: 25px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  bottom: -10rem;
+
 }
 
 
+.App{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('https://www.colourbox.com/preview/25997228-clock-background-isolated-vector-illustration.jpg');
+    background-size: cover;
+    background-position: top-center;
+    opacity: 0.50;
+  }
+
+}

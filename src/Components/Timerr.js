@@ -63,21 +63,29 @@ function to30(){
     setSeconds(initialSeconds)
 }
 
-
+    function rest(){
+      let initialMinute = 5
+      let initialSeconds= 0;
+      setMinutes(initialMinute);
+      setSeconds(initialSeconds)
+    }
 
  
 
   return (
     <>
-    <h2>Pomodoro App</h2>
+    <header>
+    <h2 className="title" >Pomodoro Timer</h2>
+    <h4>Add a task, start the clock</h4>
+    </header>
+
       <div class="containerr">
-    <h2 className={isActive ? 'greentext' : null} >{isActive && minutes !== 0 ? null : null}</h2>
+      <h2   className={isActive ? 'greentext' : null} >{isActive && minutes !== 0 ? null : null}</h2>
     <div className="Pomo-container" >
     { minutes === 0 && seconds === 0
-        ? <h4 className="break" >Take a 5 min Break! you've earned it</h4>
+        ? <h2>{rest()}</h2>
         : <h1 className={isActive ? 'green' : 'countdown'}> {minutes}:{seconds < 10 ?  `0${seconds}` : seconds}</h1> 
     }
-
 
     <button style={{width: "200px", height: "100px", fontSize: "50px"}} onClick={toggle}  className={`  maintwo button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}>
           {isActive ? 'Pause' : 'Start'} 

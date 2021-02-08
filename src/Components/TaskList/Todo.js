@@ -16,7 +16,7 @@
 
      return (
         <div className="AddTodo">
-        <Checkbox style={{position:'relative', bottom:'3.2rem'}} id="check" checked={todo.completed}  onClick={handleDelete} type="checkbox" />
+        <Checkbox style={{position:'relative', bottom:'3.2rem'}} id="check" checked={todo.completed}  onClick={handleCheckBox} type="checkbox" />
          <p
             
             style={{
