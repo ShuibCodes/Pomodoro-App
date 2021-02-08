@@ -133,17 +133,18 @@ li {
   padding-top: 0 !important;
   border-radius: 30px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap');
 .title{
-    font-family: 'Courier New', Courier, monospace;
-    padding-top: 30px ;
-    margin-top: 20px;
+    font-family: 'Merriweather', sans-serif;
+    padding-top: 40px ;
+    margin-top: 30px;
     position: relative;
 }
 h4{
   padding-bottom: 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: -30px;
-  font-size: 30px;
+  font-size: 40px;
   position: relative;
   font-weight: 800;
   color: black;

@@ -5,8 +5,8 @@ import NewTime from './TaskList/NewTime';
 
 
 const Timer = () => {
-  let initialMinute = 0;
-  let initialSeconds = 3;
+  let initialMinute = 25;
+  let initialSeconds = 0;
   const [ minutes, setMinutes ] = useState(initialMinute);
   const [seconds, setSeconds ] =  useState(initialSeconds);
   const [isActive, setIsActive] = useState(false)

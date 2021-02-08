@@ -73,7 +73,7 @@ code {
 }
 
 .button-primary-inactive {
-  background-color: #3151ff;
+  background-color: green;
   border: 1px solid #152684;
   color: white;
   
@@ -95,7 +95,7 @@ code {
 }
 
 .rbutton-primary-inactive {
-  background-color: #3151ff;
+  background-color: red;
   border: 1px solid #152684;
   color: white;
 }
