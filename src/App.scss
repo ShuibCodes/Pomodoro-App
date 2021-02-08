@@ -82,9 +82,6 @@ li {
 }
 
 
-.add{
-  font-size: 30px;
-}
 .button{
   width: 70px;
   padding: 4px 8px 4px 8px;
@@ -116,6 +113,12 @@ li {
 .App-link {
   color: #61dafb;
 }
+.task{
+  position: relative;
+  margin-top: -5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
 .containerr{
   display: grid;
@@ -140,17 +143,23 @@ li {
     margin-top: 30px;
     position: relative;
 }
-h4{
+h3{
   padding-bottom: 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: -30px;
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
   font-weight: 800;
   color: black;
 
 
 }
+
+span{
+  font-style: italic;
+  font-family: fantasy;
+}
+
 .flex2{ 
   position: absolute;
   top: 5.7rem;
@@ -160,6 +169,8 @@ h4{
   padding: 150px 10px 150px 10px;
   width: 600px;
   background-color: lightblue;
+  width: -moz-fit-content;
+  width: fit-content;
 
 }
 h2{
@@ -171,12 +182,18 @@ form{
   right: 2rem;
 }
 p{
-  position: relative;
-  font-size: 40px;
-  bottom: 4rem !important
+ text-align:center;
+position: relative;
+bottom: 5rem;
 }
 .AddTodo{
-  margin-left:60px
+  margin-left:60px;
+
+  
+}
+.contain span{
+  display: block;
+
 }
 .times{
       padding-top: 5px ;
@@ -247,3 +264,6 @@ p{
   }
 
 }
+
+
+

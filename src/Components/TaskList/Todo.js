@@ -19,16 +19,17 @@ import FormLabel from '@material-ui/core/FormLabel'
 
      return (
         <div className="AddTodo">
-        <Checkbox style={{position:'relative', bottom:'3.2rem',width:'20px'}} id="check" checked={todo.completed}  onClick={handleCheckBox} type="checkbox" />
-         <p
-            
+            <div className="contain">
+            <p
             style={{
-                // width: '100%',
-                // color: "black",
+               
                 textDecoration: todo.completed ? "line-through" : null
             }}
          >{todo.task}</p>
+         <h5 className="task" >Working on: <span>{todo.task}</span> </h5>
     
+            </div>
+
         </div>
       
          

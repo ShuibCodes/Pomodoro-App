@@ -76,7 +76,7 @@ function to30(){
     <>
     <header>
     <h2 className="title" >Pomodoro Timer</h2>
-    <h4>Add a task, start the clock</h4>
+    <h3>Add a task, start the clock</h3>
     </header>
 
       <div class="containerr">
@@ -96,7 +96,7 @@ function to30(){
   
     </div>
       <div className="flex2" >
-      <MainTodo toggle={toggle} reset={reset} />
+      <MainTodo toggle={toggle} reset={reset}/>
       </div>
     
     </div>

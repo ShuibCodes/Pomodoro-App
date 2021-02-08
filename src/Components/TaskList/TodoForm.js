@@ -6,7 +6,7 @@ import {makeStyles} from '@material-ui/core/styles'
 
 // import {v4 as uuid} from 'uuid';
 // destructing addTodo function from props paramter. props can only be passed down from parent to child
-const TodoForm = ({addTodo}) => {
+const TodoForm = ({addTodo,toggle}) => {
     const [todo, setTodo] = useState({
         // state will keep track of input from user, so object with 3 properties
         id: "",
@@ -31,20 +31,20 @@ const TodoForm = ({addTodo}) => {
             if(todo.task.trim()){
                 // addTodo func adds an array, this function asigns it ar
                 addTodo({...todo, id: Math.random()});
+                
+          
                 // reset form by updating state with empty task prop:
                 setTodo({...todo, task: ""});
-                window.scroll(0, 1000);
+               
 
             }
         }
-
-
-
-
-
+       
 
     return (
-        <form className="todo-form" onSubmit={handleSubmit}>
+        <>
+            
+         <form className="todo-form" onSubmit={handleSubmit}>
             <TextField onChange={handleChange} 
                 variant="standard"
                 className="AddTodo"
@@ -55,6 +55,8 @@ const TodoForm = ({addTodo}) => {
                 style={{fontSize:'50px'}}   
                  />
         </form>
+        </>
+       
     );
 }
 
